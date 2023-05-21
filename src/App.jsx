@@ -1,10 +1,10 @@
-import { Navbar } from "./components/layout/navBar/Navbar"
+import { NavBar } from "./components/layout/NavBar/NavBar"
 import { ItemListContainer } from "./components/pages/ItemListContainer/ItemListContainer"
 
 function App() {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <ItemListContainer greeting="Bienvenidos a mi página, aquí debería ir mi item list container" />
     </>
   )
