@@ -1,11 +1,12 @@
-import "./cartWidget.css"
-import { BsCart } from "react-icons/bs"
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined"
+import { Badge } from "@mui/material"
 
 export const CartWidget = () => {
+  const count = 4
+
   return (
-    <div className="cart">
-      <BsCart fontSize="30px" />
-      <span className="cartWidget">4</span>
-    </div>
+    <Badge badgeContent={count} color="primary">
+      <ShoppingCartOutlinedIcon fontSize="large" />
+    </Badge>
   )
 }
