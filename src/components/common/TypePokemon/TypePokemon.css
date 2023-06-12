@@ -1,0 +1,76 @@
+.chipPropio {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 12px;
+  padding: 5px 15px;
+  display: inline-block;
+  margin: 2px;
+  user-select: none;
+}
+
+.chipPropio span {
+  font-weight: 600;
+  font-size: small;
+}
+
+.acero {
+  background-color: #a8a8c0;
+}
+
+.agua {
+  background-color: #3899f8;
+}
+
+.bicho {
+  background-color: #a8b820;
+}
+.dragon {
+  background-color: #7860e0;
+}
+.electrico {
+  background-color: #f8d030;
+}
+.fantasma {
+  background-color: #6060b0;
+}
+.fuego {
+  background-color: #f05030;
+}
+.hada {
+  background-color: #e79fe7;
+}
+.hielo {
+  background-color: #58c8e0;
+}
+.lucha {
+  background-color: #a05038;
+}
+.normal {
+  background-color: #a8a090;
+}
+.planta {
+  background-color: #78c850;
+}
+.psiquico {
+  background-color: #f870a0;
+}
+.roca {
+  background-color: #b8a058;
+}
+.siniestro {
+  background-color: #7a5848;
+}
+.tierra {
+  background-color: #e9d6a4;
+}
+.veneno {
+  background-color: #b058a0;
+}
+.volador {
+  background-color: #98a8f0;
+}
+
+/*
+Este contenido proviene de wikidex.net, y debe darse atribución a sus autores, tal como especifica la licencia.
+Se prohíbe su uso a PlagioDex (el wiki de FANDOOM), por copiar reiteradamente sin dar atribución
+*/
