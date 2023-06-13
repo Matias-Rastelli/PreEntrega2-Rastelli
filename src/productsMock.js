@@ -528,6 +528,14 @@ export const pokemonList = [
       "Mew es un Pokémon mítico de tipo psiquico. Se cree que posee el ADN de todos los Pokémon y es capaz de aprender cualquier movimiento. Es extremadamente raro de encontrar y tiene la habilidad de volverse invisible.",
     type: ["psiquico"],
     img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
+    stats: {
+      hp: 100,
+      spatk: 100,
+      spdef: 150,
+      atk: 120,
+      def: 130,
+      spd: 160,
+    },
   },
 ]
 

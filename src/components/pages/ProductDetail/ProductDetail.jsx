@@ -1,19 +1,8 @@
-/*
-{
-    id: 53,
-    title: "Mew",
-    price: 40000,
-    stock: 6,
-    description:
-      "Mew es un Pokémon mítico de tipo Psíquico. Se cree que posee el ADN de todos los Pokémon y es capaz de aprender cualquier movimiento. Es extremadamente raro de encontrar y tiene la habilidad de volverse invisible.",
-    type: ["Psíquico"],
-    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
-  }
-  */
-
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { pokemonList } from "../../../productsMock"
+import { Box, Container, Typography } from "@mui/material"
+import { TypePokemon } from "../../common/TypePokemon/TypePokemon"
 
 export const ProductDetail = () => {
   const [itemSelected, setItemSelect] = useState({})
@@ -33,11 +22,38 @@ export const ProductDetail = () => {
   }, [id])
 
   return (
-    <div>
-      <h1>{itemSelected.title} </h1>
-      <img src={itemSelected.img} alt="" />
-      <p>{itemSelected.description} </p>
-      <p>${itemSelected.price} </p>
-    </div>
+    <Container sx={{ display: "flex", flexDirection: "row" }}>
+      <Box>
+        <img src={itemSelected.img} alt={itemSelected.title} />
+      </Box>
+      <Box>
+        <Typography variant="h2" component="h2" align="center">
+          {itemSelected.title}
+        </Typography>
+        <TypePokemon type={itemSelected.type} />
+        <Typography>{itemSelected.description}</Typography>
+        <Box>
+          <Typography variant="h6" component="h6">
+            Caracteristicas
+          </Typography>
+          <Typography>HP: {itemSelected.stats?.hp ?? "Desconocido"}</Typography>
+          <Typography>
+            Ataque: {itemSelected.stats?.atk ?? "Desconocido"}
+          </Typography>
+          <Typography>
+            Defensa: {itemSelected.stats?.def ?? "Desconocido"}
+          </Typography>
+          <Typography>
+            Ataque especial: {itemSelected.stats?.spatk ?? "Desconocido"}
+          </Typography>
+          <Typography>
+            Defensa especial: {itemSelected.stats?.spdef ?? "Desconocido"}
+          </Typography>
+          <Typography>
+            Velocidad: {itemSelected.stats?.spd ?? "Desconocido"}
+          </Typography>
+        </Box>
+      </Box>
+    </Container>
   )
 }

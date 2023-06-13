@@ -14,7 +14,7 @@ export const NavBar = () => {
           justifyContent: "space-between",
           alignItems: "center",
           maxWidth: "100vw",
-          padding: 3,
+          padding: 1,
           paddingRight: 10,
           backgroundColor: "lightgray",
         }}
@@ -28,7 +28,7 @@ export const NavBar = () => {
             fontFamily: "monospace",
           }}
         >
-          PokeTienda
+          <Link to="/">PokeTienda</Link>
         </Typography>
         <Button variant="contained" size="small">
           <Link to="/">TODOS</Link>

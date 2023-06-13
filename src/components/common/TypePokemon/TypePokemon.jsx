@@ -4,7 +4,7 @@ import "./TypePokemon.css"
 export const TypePokemon = ({ type }) => {
   return (
     <div>
-      {type.map((element, i) => {
+      {type?.map((element, i) => {
         return (
           <div key={i} className={"chipPropio " + element}>
             <span> {element.toUpperCase()} </span>
