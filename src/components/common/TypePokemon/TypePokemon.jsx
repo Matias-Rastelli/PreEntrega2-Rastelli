@@ -1,29 +1,29 @@
-// import { Chip } from "@mui/material"
+import { Chip } from "@mui/material"
 import "./TypePokemon.css"
+import { colorMap } from "../../../colorMap"
 
-export const TypePokemon = ({ type }) => {
+const typeColor = (type) => {
+  const color = colorMap[type]
+  return color
+}
+
+export const TypePokemon = ({ type, font }) => {
   return (
     <div>
       {type?.map((element, i) => {
         return (
-          <div key={i} className={"chipPropio " + element}>
-            <span> {element.toUpperCase()} </span>
-          </div>
+          <Chip
+            key={i}
+            label={element.toUpperCase()}
+            size="small"
+            sx={{
+              userSelect: "none",
+              backgroundColor: typeColor(element),
+              fontSize: font,
+            }}
+          />
         )
       })}
     </div>
   )
 }
-
-/*
-{category.map((element, i) => {
-        return (
-          <Chip
-            className={element}
-            key={i}
-            label={element}
-            sx={{ userSelect: "none" }}
-          />
-        )
-      })}
-*/

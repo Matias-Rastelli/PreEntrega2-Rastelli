@@ -6,10 +6,12 @@ import {
   Button,
   Typography,
 } from "@mui/material"
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart"
 
 import { TypePokemon } from "../TypePokemon/TypePokemon"
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import { colorMap } from "../../../colorMap"
 
 export const ProductCard = ({ item }) => {
   const [isHovered, setIsHovered] = useState(false)
@@ -22,27 +24,6 @@ export const ProductCard = ({ item }) => {
     setIsHovered(false)
   }
 
-  const colorMap = {
-    acero: "#A8A8C0",
-    agua: "#3899F8",
-    bicho: "#A8B820",
-    dragon: "#7860E0",
-    electrico: "#F8D030",
-    fantasma: "#6060B0",
-    fuego: "#F05030",
-    hada: "#E79FE7",
-    hielo: "#58C8E0",
-    lucha: "#A05038",
-    normal: "#A8A090",
-    planta: "#78C850",
-    psiquico: "#F870A0",
-    roca: "#B8A058",
-    siniestro: "#7A5848",
-    tierra: "#E9D6A4",
-    veneno: "#B058A0",
-    volador: "#98A8F0",
-  }
-
   function color(type) {
     const color1 = colorMap[type[0]]
     const color2 = colorMap[type[1]]
@@ -51,6 +32,8 @@ export const ProductCard = ({ item }) => {
     }
     return `radial-gradient(circle, rgba(255,255,255,0.5) 0%, ${color1} 100%);`
   }
+
+  const Carrito = <AddShoppingCartIcon />
 
   return (
     <Card
@@ -76,7 +59,7 @@ export const ProductCard = ({ item }) => {
         <Typography variant="h6" component="h6">
           {item.title}
         </Typography>
-        <TypePokemon type={item.type} />
+        <TypePokemon type={item.type} font="10px" />
         <Typography
           variant="body2"
           color="text.secondary"
@@ -94,6 +77,7 @@ export const ProductCard = ({ item }) => {
         <Button
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
+          endIcon={isHovered ? null : <AddShoppingCartIcon />}
           variant="contained"
           color="success"
           size="small"

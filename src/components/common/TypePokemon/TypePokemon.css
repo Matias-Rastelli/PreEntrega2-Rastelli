@@ -1,73 +1,58 @@
-.chipPropio {
-  width: fit-content;
-  height: fit-content;
-  border-radius: 12px;
-  padding: 1px 8px;
-  display: inline-block;
-  margin: 2px;
-  user-select: none;
-}
-
-.chipPropio span {
-  font-weight: 600;
-  font-size: xx-small;
-}
-
 .acero {
-  background-color: #a8a8c0;
+  background-color: #a8a8c0 !important;
 }
 
 .agua {
-  background-color: #3899f8;
+  background-color: #3899f8 !important;
 }
 
 .bicho {
-  background-color: #a8b820;
+  background-color: #a8b820 !important;
 }
 .dragon {
-  background-color: #7860e0;
+  background-color: #7860e0 !important;
 }
 .electrico {
-  background-color: #f8d030;
+  background-color: #f8d030 !important;
 }
 .fantasma {
-  background-color: #6060b0;
+  background-color: #6060b0 !important;
 }
 .fuego {
-  background-color: #f05030;
+  background-color: #f05030 !important;
 }
 .hada {
-  background-color: #e79fe7;
+  background-color: #e79fe7 !important;
 }
 .hielo {
-  background-color: #58c8e0;
+  background-color: #58c8e0 !important;
 }
 .lucha {
-  background-color: #a05038;
+  background-color: #a05038 !important;
 }
 .normal {
-  background-color: #a8a090;
+  background-color: #a8a090 !important;
 }
 .planta {
-  background-color: #78c850;
+  background-color: #78c850 !important;
 }
 .psiquico {
-  background-color: #f870a0;
+  background-color: #f870a0 !important;
 }
 .roca {
-  background-color: #b8a058;
+  background-color: #b8a058 !important;
 }
 .siniestro {
-  background-color: #7a5848;
+  background-color: #7a5848 !important;
 }
 .tierra {
-  background-color: #e9d6a4;
+  background-color: #e9d6a4 !important;
 }
 .veneno {
-  background-color: #b058a0;
+  background-color: #b058a0 !important;
 }
 .volador {
-  background-color: #98a8f0;
+  background-color: #98a8f0 !important;
 }
 
 /*

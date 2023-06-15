@@ -30,7 +30,7 @@ export const ProductDetail = () => {
         <Typography variant="h2" component="h2" align="center">
           {itemSelected.title}
         </Typography>
-        <TypePokemon type={itemSelected.type} />
+        <TypePokemon type={itemSelected.type} font="14px" />
         <Typography>{itemSelected.description}</Typography>
         <Box>
           <Typography variant="h6" component="h6">
