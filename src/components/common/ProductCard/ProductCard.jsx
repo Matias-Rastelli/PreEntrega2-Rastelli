@@ -33,8 +33,6 @@ export const ProductCard = ({ item }) => {
     return `radial-gradient(circle, rgba(255,255,255,0.5) 0%, ${color1} 100%);`
   }
 
-  const Carrito = <AddShoppingCartIcon />
-
   return (
     <Card
       sx={{

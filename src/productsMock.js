@@ -13,7 +13,7 @@ export const pokemonList = [
     id: 2,
     title: "Charizard",
     price: 25000,
-    stock: 10,
+    stock: 0,
     description:
       "Charizard es un poderoso Pokémon conocido por su aliento de fuego. Es altamente resistente y se destaca en batalla.",
     type: ["fuego", "volador"],
