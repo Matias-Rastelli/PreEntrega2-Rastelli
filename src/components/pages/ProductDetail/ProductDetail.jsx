@@ -48,19 +48,21 @@ export const ProductDetail = () => {
           </Typography>
           <Typography>HP: {itemSelected.stats?.hp ?? "Desconocido"}</Typography>
           <Typography>
-            Ataque: {itemSelected.stats?.atk ?? "Desconocido"}
+            Ataque: {itemSelected.stats?.attack ?? "Desconocido"}
           </Typography>
           <Typography>
-            Defensa: {itemSelected.stats?.def ?? "Desconocido"}
+            Defensa: {itemSelected.stats?.defense ?? "Desconocido"}
           </Typography>
           <Typography>
-            Ataque especial: {itemSelected.stats?.spatk ?? "Desconocido"}
+            Ataque especial:{" "}
+            {itemSelected.stats?.["special-attack"] ?? "Desconocido"}
           </Typography>
           <Typography>
-            Defensa especial: {itemSelected.stats?.spdef ?? "Desconocido"}
+            Defensa especial:{" "}
+            {itemSelected.stats?.["special-defense"] ?? "Desconocido"}
           </Typography>
           <Typography>
-            Velocidad: {itemSelected.stats?.spd ?? "Desconocido"}
+            Velocidad: {itemSelected.stats?.speed ?? "Desconocido"}
           </Typography>
         </Box>
         {itemSelected.stock > 0 ? (

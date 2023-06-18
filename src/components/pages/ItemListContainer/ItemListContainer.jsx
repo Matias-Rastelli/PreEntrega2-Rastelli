@@ -1,13 +1,18 @@
 import { useState } from "react"
 import { pokemonList } from "../../../productsMock"
 import { useEffect } from "react"
-import { Box } from "@mui/material"
+import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material"
 import { ProductCard } from "../../common/ProductCard/ProductCard"
 import { useParams } from "react-router-dom"
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([])
+  const [order, setOrder] = useState("id")
 
+  const handleChange = (event) => {
+    console.log(event.target.value)
+    setOrder(event.target.value)
+  }
   const { typeName } = useParams()
 
   useEffect(() => {
@@ -18,26 +23,57 @@ export const ItemListContainer = () => {
     const getData = new Promise((res) => {
       res(typeName ? pokemonFilter : pokemonList)
     })
-    getData.then((res) => setItems(res)).catch((err) => console.log(err))
-  }, [typeName])
+
+    getData
+      .then((res) => setItems(sortItems(res)))
+      .catch((err) => console.log(err))
+
+    const sortItems = (data) => {
+      const sortedData = [...data]
+      if (order === "id") {
+        sortedData.sort((a, b) => a.id - b.id)
+      } else if (order === "name") {
+        sortedData.sort((a, b) => a.title.localeCompare(b.title))
+      } else if (order === "price") {
+        sortedData.sort((a, b) => a.price - b.price)
+      }
+      return sortedData
+    }
+  }, [typeName, order])
 
   return (
-    <Box
-      componnet="div"
-      sx={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
-        width: "95vw",
-        flexWrap: "wrap",
-        gap: "5px",
-        margin: "5px",
-      }}
-    >
-      {items.map((item) => {
-        return <ProductCard key={item.id} item={item} />
-      })}
-    </Box>
+    <>
+      <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label">Orden</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={order}
+          label="Orden"
+          onChange={handleChange}
+        >
+          <MenuItem value="id">Por ID</MenuItem>
+          <MenuItem value="name">Por Nombre</MenuItem>
+          <MenuItem value="price">Por Precio</MenuItem>
+        </Select>
+      </FormControl>
+      <Box
+        componnet="div"
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "95vw",
+          flexWrap: "wrap",
+          gap: "5px",
+          margin: "5px",
+        }}
+      >
+        {items.map((item) => {
+          return <ProductCard key={item.id} item={item} />
+        })}
+      </Box>
+    </>
   )
 }
