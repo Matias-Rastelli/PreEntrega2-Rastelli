@@ -5,9 +5,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-body {
-  background: #ecf0f1;
-}
 .center-on-page {
   position: absolute;
   top: 50%;

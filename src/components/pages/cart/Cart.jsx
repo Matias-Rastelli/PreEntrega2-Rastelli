@@ -8,6 +8,22 @@ export const Cart = () => {
 
   const total = totalPrice()
 
+  const deleteOne = (id) => {
+    Swal.fire({
+      title: "¿Seguro que quita este super pokémon del carrito?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Si, Sacalo",
+      cancelButtonText: "NOOOO",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        deleteItem(id)
+        Swal.fire("Ya sacamos esa cosa!", "uno menos!", "warning")
+      }
+    })
+  }
   const limpiar = () => {
     Swal.fire({
       title: "¿Seguro que quieres limpiar el carrito?",
@@ -37,7 +53,7 @@ export const Cart = () => {
             <img src={item.img} alt="" />
             <button
               onClick={() => {
-                deleteItem(item.id)
+                deleteOne(item.id)
               }}
             >
               ELIMINAR

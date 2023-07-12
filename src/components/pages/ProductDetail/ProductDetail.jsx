@@ -6,6 +6,7 @@ import { TypePokemon } from "../../common/TypePokemon/TypePokemon"
 import { ItemCount } from "../../common/Count/ItemCount"
 import { CartContext } from "../../../context/CartContext"
 import { Loader } from "../../common/loader/Loader"
+import Swal from "sweetalert2"
 
 export const ProductDetail = () => {
   const [itemSelected, setItemSelect] = useState({})
@@ -30,6 +31,25 @@ export const ProductDetail = () => {
   }, [id])
 
   const onAdd = (cantidad) => {
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "bottom-end",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer)
+        toast.addEventListener("mouseleave", Swal.resumeTimer)
+      },
+    })
+
+    Toast.fire({
+      icon: "success",
+      title: `${itemSelected.title} agregado al carrito. 
+      Cantidad en carrito: ${cantidad} 
+      Total: $${itemSelected.price * cantidad} `,
+    })
+
     let data = {
       ...itemSelected,
       quantity: cantidad,
@@ -40,7 +60,14 @@ export const ProductDetail = () => {
     return <Loader />
   }
   return (
-    <Container sx={{ display: "flex", flexDirection: "row" }}>
+    <Container
+      sx={{
+        display: "flex",
+        flexDirection: "row",
+        border: "1px solid grey",
+        marginTop: "20px",
+      }}
+    >
       <Box>
         <img src={itemSelected.img} alt={itemSelected.title} />
       </Box>
@@ -49,10 +76,10 @@ export const ProductDetail = () => {
           {itemSelected.title}
         </Typography>
         <TypePokemon type={itemSelected.type} font="14px" />
-        <Typography>{itemSelected.description}</Typography>
-        <Box>
+        <Typography fontSize={16}>{itemSelected.description}</Typography>
+        <Box sx={{ borderTop: "1px solid grey" }}>
           <Typography variant="h6" component="h6">
-            Caracteristicas
+            <b> Caracteristicas</b>
           </Typography>
           <Typography>HP: {itemSelected.stats?.hp ?? "Desconocido"}</Typography>
           <Typography>
@@ -73,15 +100,33 @@ export const ProductDetail = () => {
             Velocidad: {itemSelected.stats?.speed ?? "Desconocido"}
           </Typography>
         </Box>
-        {itemSelected.stock > 0 ? (
-          <ItemCount
-            stock={itemSelected.stock}
-            initial={cantidad}
-            onAdd={onAdd}
-          />
-        ) : (
-          <Typography variant="h5">Sin stock disponible</Typography>
-        )}
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-around",
+            borderTop: "1px solid grey",
+          }}
+        >
+          <Box>
+            <Typography fontSize={24}>
+              <b>Precio:</b> ${itemSelected.price}
+            </Typography>
+            <Typography fontSize={24}>
+              <b>Stock:</b> {itemSelected.stock} unid.
+            </Typography>
+          </Box>
+          {itemSelected.stock > 0 ? (
+            <ItemCount
+              stock={itemSelected.stock}
+              initial={cantidad}
+              onAdd={onAdd}
+            />
+          ) : (
+            <Typography variant="h5">Sin stock disponible</Typography>
+          )}
+        </Box>
       </Box>
     </Container>
   )

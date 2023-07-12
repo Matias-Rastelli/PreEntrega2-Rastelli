@@ -5,6 +5,7 @@ import {
   CardMedia,
   Button,
   Typography,
+  Chip,
 } from "@mui/material"
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart"
 
@@ -42,8 +43,15 @@ export const ProductCard = ({ item }) => {
         flexDirection: "column",
         justifyContent: "space-between",
         background: color(item.type),
+        position: "relative",
       }}
     >
+      <Chip
+        variant="filled"
+        color="secondary"
+        label={item.id}
+        sx={{ position: "absolute", margin: "2px", right: 0 }}
+      ></Chip>
       <CardMedia
         component="img"
         alt={item.title}
