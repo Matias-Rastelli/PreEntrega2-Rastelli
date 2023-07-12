@@ -1,22 +1,22 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { NavBar } from "./components/layout/NavBar/NavBar"
-import { ItemListContainer } from "./components/pages/ItemListContainer/ItemListContainer"
-import { Cart } from "./components/pages/cart/Cart"
-import { ProductDetail } from "./components/pages/ProductDetail/ProductDetail"
+import { menuRoutes } from "./routes/routes"
+import CartContextProvider from "./context/CartContext"
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route element={<NavBar />}>
-          <Route path="/" element={<ItemListContainer />} />
-          <Route path="/type/:typeName" element={<ItemListContainer />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/itemDetail/:id" element={<ProductDetail />} />
-        </Route>
+      <CartContextProvider>
+        <Routes>
+          <Route element={<NavBar />}>
+            {menuRoutes.map(({ id, path, Element }) => (
+              <Route key={id} path={path} element={<Element />} />
+            ))}
+          </Route>
 
-        <Route path="*" element={<h1>404 not found</h1>} />
-      </Routes>
+          <Route path="*" element={<h1>404 not found</h1>} />
+        </Routes>
+      </CartContextProvider>
     </BrowserRouter>
   )
 }

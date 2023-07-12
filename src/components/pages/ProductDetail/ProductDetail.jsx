@@ -1,20 +1,27 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { pokemonList } from "../../../productsMock"
 import { Box, Container, Typography } from "@mui/material"
 import { TypePokemon } from "../../common/TypePokemon/TypePokemon"
 import { ItemCount } from "../../common/Count/ItemCount"
+import { CartContext } from "../../../context/CartContext"
+import { Loader } from "../../common/loader/Loader"
 
 export const ProductDetail = () => {
   const [itemSelected, setItemSelect] = useState({})
 
   const { id } = useParams()
+  const { addToCart, getTotalByID } = useContext(CartContext)
+
+  const cantidad = getTotalByID(id)
 
   useEffect(() => {
     let itemFind = pokemonList.find((item) => item.id === +id)
 
     const getProduct = new Promise((res) => {
-      res(itemFind)
+      setTimeout(() => {
+        res(itemFind)
+      }, 500)
     })
 
     getProduct
@@ -27,10 +34,11 @@ export const ProductDetail = () => {
       ...itemSelected,
       quantity: cantidad,
     }
-
-    console.log(data)
+    addToCart(data)
   }
-  //solo el pokemon de ID:53 tiene las estadisticas puestas, para la nueva base de datos van a estar todos completos}
+  if (!itemSelected.price) {
+    return <Loader />
+  }
   return (
     <Container sx={{ display: "flex", flexDirection: "row" }}>
       <Box>
@@ -66,7 +74,11 @@ export const ProductDetail = () => {
           </Typography>
         </Box>
         {itemSelected.stock > 0 ? (
-          <ItemCount stock={itemSelected.stock} initial={1} onAdd={onAdd} />
+          <ItemCount
+            stock={itemSelected.stock}
+            initial={cantidad}
+            onAdd={onAdd}
+          />
         ) : (
           <Typography variant="h5">Sin stock disponible</Typography>
         )}

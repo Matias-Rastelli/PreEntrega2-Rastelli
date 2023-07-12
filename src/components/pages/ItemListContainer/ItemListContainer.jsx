@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material"
 import { ProductCard } from "../../common/ProductCard/ProductCard"
 import { useParams } from "react-router-dom"
+import { Loader } from "../../common/loader/Loader"
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([])
@@ -21,7 +22,9 @@ export const ItemListContainer = () => {
     )
 
     const getData = new Promise((res) => {
-      res(typeName ? pokemonFilter : pokemonList)
+      setTimeout(() => {
+        res(typeName ? pokemonFilter : pokemonList)
+      }, 500)
     })
 
     getData
@@ -40,6 +43,10 @@ export const ItemListContainer = () => {
       return sortedData
     }
   }, [typeName, order])
+
+  if (items.length === 0) {
+    return <Loader />
+  }
 
   return (
     <>

@@ -3,7 +3,7 @@ import { useCount } from "../../hooks/useCount"
 import RemoveCircleOutlineSharpIcon from "@mui/icons-material/RemoveCircleOutlineSharp"
 import AddCircleOutlineSharpIcon from "@mui/icons-material/AddCircleOutlineSharp"
 
-export const ItemCount = ({ stock, initial, onAdd }) => {
+export const ItemCount = ({ stock, initial = 1, onAdd }) => {
   const { count, decrement, increment } = useCount(initial, stock)
 
   return (
