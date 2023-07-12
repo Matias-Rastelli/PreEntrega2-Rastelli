@@ -7,6 +7,7 @@ import { ItemCount } from "../../common/Count/ItemCount"
 import { CartContext } from "../../../context/CartContext"
 import { Loader } from "../../common/loader/Loader"
 import Swal from "sweetalert2"
+import { colorMap } from "../../../colorMap"
 
 export const ProductDetail = () => {
   const [itemSelected, setItemSelect] = useState({})
@@ -29,6 +30,15 @@ export const ProductDetail = () => {
       .then((res) => setItemSelect(res))
       .catch((err) => console.log(err))
   }, [id])
+
+  function color(type) {
+    const color1 = colorMap[type[0]]
+    const color2 = colorMap[type[1]]
+    if (type.length > 1) {
+      return `linear-gradient(135deg, ${color1} 0%, ${color2} 100%)`
+    }
+    return `radial-gradient(circle, rgba(255,255,255,0.5) 0%, ${color1} 100%);`
+  }
 
   const onAdd = (cantidad) => {
     const Toast = Swal.mixin({
@@ -66,6 +76,7 @@ export const ProductDetail = () => {
         flexDirection: "row",
         border: "1px solid grey",
         marginTop: "20px",
+        background: color(itemSelected.type),
       }}
     >
       <Box>

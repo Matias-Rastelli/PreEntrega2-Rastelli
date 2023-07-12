@@ -47,10 +47,10 @@ export const ProductCard = ({ item }) => {
       }}
     >
       <Chip
-        variant="filled"
-        color="secondary"
-        label={item.id}
-        sx={{ position: "absolute", margin: "2px", right: 0 }}
+        variant="outlined"
+        color="default"
+        label={`N.°${item.id}`}
+        sx={{ position: "absolute", margin: "2px", right: 0, top: "48%" }}
       ></Chip>
       <CardMedia
         component="img"

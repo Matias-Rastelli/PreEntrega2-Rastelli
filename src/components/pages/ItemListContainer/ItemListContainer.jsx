@@ -1,10 +1,19 @@
 import { useState } from "react"
 import { pokemonList } from "../../../productsMock"
 import { useEffect } from "react"
-import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material"
+import {
+  Box,
+  FormControl,
+  InputAdornment,
+  InputLabel,
+  MenuItem,
+  Select,
+  TextField,
+} from "@mui/material"
 import { ProductCard } from "../../common/ProductCard/ProductCard"
 import { useParams } from "react-router-dom"
 import { Loader } from "../../common/loader/Loader"
+import SearchIcon from "@mui/icons-material/Search"
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([])
@@ -50,7 +59,7 @@ export const ItemListContainer = () => {
 
   return (
     <>
-      <FormControl fullWidth>
+      <FormControl sx={{ display: "flex", flexDirection: "row" }}>
         <InputLabel id="demo-simple-select-label">Orden</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -63,6 +72,9 @@ export const ItemListContainer = () => {
           <MenuItem value="name">Por Nombre</MenuItem>
           <MenuItem value="price">Por Precio</MenuItem>
         </Select>
+        <Box sx={{ display: "flex", alignItems: "flex-end" }}>
+          <TextField label="Buscar por nombre" variant="outlined" />
+        </Box>
       </FormControl>
       <Box
         componnet="div"

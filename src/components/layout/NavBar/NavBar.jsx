@@ -16,7 +16,7 @@ export const NavBar = () => {
           maxWidth: "100vw",
           padding: 1,
           paddingRight: 10,
-          backgroundColor: "lightgray",
+          backgroundColor: "#3a3a3ac2",
         }}
       >
         <Typography

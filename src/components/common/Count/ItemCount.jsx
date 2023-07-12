@@ -7,8 +7,16 @@ export const ItemCount = ({ stock, initial = 1, onAdd }) => {
   const { count, decrement, increment } = useCount(initial, stock)
 
   return (
-    <>
-      <Box componenet="div">
+    <Box sx={{}}>
+      <Box
+        componenet="div"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -33,6 +41,6 @@ export const ItemCount = ({ stock, initial = 1, onAdd }) => {
           Agregar al carrito
         </Button>
       </Box>
-    </>
+    </Box>
   )
 }
