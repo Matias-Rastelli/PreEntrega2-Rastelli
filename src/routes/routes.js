@@ -1,7 +1,7 @@
 import { ItemListContainer } from "../components/pages/ItemListContainer/ItemListContainer"
 import { ProductDetail } from "../components/pages/ProductDetail/ProductDetail"
 import { Cart } from "../components/pages/cart/Cart"
-import { Checkout } from "../components/pages/checkout/checkout"
+import { Checkout } from "../components/pages/checkout/Checkout"
 
 export const menuRoutes = [
   {
