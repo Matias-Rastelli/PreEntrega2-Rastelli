@@ -1,7 +1,8 @@
 import { useContext } from "react"
 import { CartContext } from "../../../context/CartContext"
-import { Loader } from "../../common/loader/Loader"
 import Swal from "sweetalert2"
+import { Box, Button, Typography } from "@mui/material"
+import { Link } from "react-router-dom"
 
 export const Cart = () => {
   const { cart, deleteAll, deleteItem, totalPrice } = useContext(CartContext)
@@ -40,6 +41,38 @@ export const Cart = () => {
         Swal.fire("Ya sacamos la basura!", "El carrito esta vacío", "success")
       }
     })
+  }
+
+  if (cart.length === 0) {
+    return (
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Typography variant="h2">No hay nada en el carrito!</Typography>
+          <img
+            src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png"
+            alt="Carrito Vacio"
+          />
+        </Box>
+        <Link to="/">
+          <Button variant="contained" size="large">
+            Seguir comprando!
+          </Button>
+        </Link>
+      </Box>
+    )
   }
 
   return (

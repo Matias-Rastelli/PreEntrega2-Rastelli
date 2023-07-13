@@ -3,8 +3,8 @@ import { pokemonList } from "../../../productsMock"
 import { useEffect } from "react"
 import {
   Box,
+  Checkbox,
   FormControl,
-  InputAdornment,
   InputLabel,
   MenuItem,
   Select,
@@ -13,26 +13,43 @@ import {
 import { ProductCard } from "../../common/ProductCard/ProductCard"
 import { useParams } from "react-router-dom"
 import { Loader } from "../../common/loader/Loader"
-import SearchIcon from "@mui/icons-material/Search"
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown"
+import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp"
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([])
   const [order, setOrder] = useState("id")
+  const [isAscending, setIsAscending] = useState(false)
+  const [filterByName, setFilterByName] = useState("")
 
   const handleChange = (event) => {
-    console.log(event.target.value)
     setOrder(event.target.value)
+    setIsAscending(false)
   }
+  const handleChangeCheck = () => {
+    setIsAscending(!isAscending)
+  }
+  const checked = isAscending
   const { typeName } = useParams()
 
   useEffect(() => {
-    let pokemonFilter = pokemonList.filter((item) =>
+    const pokemonFilter = pokemonList.filter((item) =>
       item.type.some((item) => item === typeName)
     )
 
+    const nameFiltered = (list) => {
+      const newList = list.filter((item) =>
+        item.title.toLowerCase().includes(filterByName)
+      )
+      console.log(newList)
+      return newList
+    }
+
     const getData = new Promise((res) => {
       setTimeout(() => {
-        res(typeName ? pokemonFilter : pokemonList)
+        const list = typeName ? pokemonFilter : pokemonList
+        const filteredList = nameFiltered(list)
+        res(filteredList.length === 0 ? list : filteredList)
       }, 500)
     })
 
@@ -41,7 +58,7 @@ export const ItemListContainer = () => {
       .catch((err) => console.log(err))
 
     const sortItems = (data) => {
-      const sortedData = [...data]
+      let sortedData = [...data]
       if (order === "id") {
         sortedData.sort((a, b) => a.id - b.id)
       } else if (order === "name") {
@@ -49,9 +66,12 @@ export const ItemListContainer = () => {
       } else if (order === "price") {
         sortedData.sort((a, b) => a.price - b.price)
       }
+      if (isAscending) {
+        sortedData = sortedData.reverse()
+      }
       return sortedData
     }
-  }, [typeName, order])
+  }, [typeName, order, isAscending, filterByName])
 
   if (items.length === 0) {
     return <Loader />
@@ -59,21 +79,44 @@ export const ItemListContainer = () => {
 
   return (
     <>
-      <FormControl sx={{ display: "flex", flexDirection: "row" }}>
-        <InputLabel id="demo-simple-select-label">Orden</InputLabel>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={order}
-          label="Orden"
-          onChange={handleChange}
-        >
-          <MenuItem value="id">Por ID</MenuItem>
-          <MenuItem value="name">Por Nombre</MenuItem>
-          <MenuItem value="price">Por Precio</MenuItem>
-        </Select>
+      <FormControl
+        fullWidth
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          margin: "20px",
+          gap: "50px",
+        }}
+      >
+        <Box>
+          <InputLabel id="demo-simple-select-label">Orden</InputLabel>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            value={order}
+            label="Orden"
+            onChange={handleChange}
+          >
+            <MenuItem value="id">Por ID</MenuItem>
+            <MenuItem value="name">Por Nombre</MenuItem>
+            <MenuItem value="price">Por Precio</MenuItem>
+          </Select>
+          <Checkbox
+            aria-label={isAscending ? "Ascendente" : "Descendente"}
+            icon={<KeyboardDoubleArrowUpIcon />}
+            checkedIcon={<KeyboardDoubleArrowDownIcon />}
+            onChange={handleChangeCheck}
+            checked={checked}
+          />
+        </Box>
         <Box sx={{ display: "flex", alignItems: "flex-end" }}>
-          <TextField label="Buscar por nombre" variant="outlined" />
+          <TextField
+            label="Buscar por nombre"
+            variant="outlined"
+            onChange={(event) => {
+              setFilterByName(event.target.value.toLowerCase())
+            }}
+          />
         </Box>
       </FormControl>
       <Box
