@@ -2,7 +2,6 @@ import { ItemListContainer } from "../components/pages/ItemListContainer/ItemLis
 import { ProductDetail } from "../components/pages/ProductDetail/ProductDetail"
 import { Cart } from "../components/pages/cart/Cart"
 import { Checkout } from "../components/pages/checkout/checkout"
-import { BotonRelleno } from "../components/pages/form/BotonRelleno"
 
 export const menuRoutes = [
   {
@@ -29,10 +28,5 @@ export const menuRoutes = [
     id: "checkout",
     path: "/checkout",
     Element: Checkout,
-  },
-  {
-    id: "rellenar",
-    path: "/relleno",
-    Element: BotonRelleno,
   },
 ]
