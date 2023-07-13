@@ -1,6 +1,6 @@
 export const pokemonList = [
   {
-    id: 12,
+    pokedexN: 12,
     title: "Butterfree",
     type: ["bicho", "volador"],
     description:
@@ -18,7 +18,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 113,
+    pokedexN: 113,
     title: "Chansey",
     type: ["normal"],
     description:
@@ -36,7 +36,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 212,
+    pokedexN: 212,
     title: "Scizor",
     type: ["bicho", "acero"],
     description:
@@ -54,7 +54,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 596,
+    pokedexN: 596,
     title: "Galvantula",
     type: ["bicho", "electrico"],
     description:
@@ -72,7 +72,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 637,
+    pokedexN: 637,
     title: "Volcarona",
     type: ["bicho", "fuego"],
     description:
@@ -90,7 +90,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 794,
+    pokedexN: 794,
     title: "Buzzwole",
     type: ["bicho", "lucha"],
     description: "Descripción no disponible para este Pokémon",
@@ -107,7 +107,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 149,
+    pokedexN: 149,
     title: "Dragonite",
     type: ["dragon", "volador"],
     description:
@@ -125,7 +125,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 334,
+    pokedexN: 334,
     title: "Altaria",
     type: ["dragon", "volador"],
     description:
@@ -143,7 +143,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 380,
+    pokedexN: 380,
     title: "Latias",
     type: ["dragon", "psiquico"],
     description:
@@ -161,7 +161,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 381,
+    pokedexN: 381,
     title: "Latios",
     type: ["dragon", "psiquico"],
     description:
@@ -179,7 +179,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 697,
+    pokedexN: 697,
     title: "Tyrantrum",
     type: ["roca", "dragon"],
     description:
@@ -197,7 +197,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 887,
+    pokedexN: 887,
     title: "Dragapult",
     type: ["dragon", "fantasma"],
     description: "Descripción no disponible para este Pokémon",
@@ -214,7 +214,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 36,
+    pokedexN: 36,
     title: "Clefable",
     type: ["hada"],
     description:
@@ -232,7 +232,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 282,
+    pokedexN: 282,
     title: "Gardevoir",
     type: ["psiquico", "hada"],
     description:
@@ -250,7 +250,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 730,
+    pokedexN: 730,
     title: "Primarina",
     type: ["agua", "hada"],
     description: "Descripción no disponible para este Pokémon",
@@ -267,7 +267,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 778,
+    pokedexN: 778,
     title: "Mimikyu",
     type: ["fantasma", "hada"],
     description: "Descripción no disponible para este Pokémon",
@@ -284,7 +284,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 547,
+    pokedexN: 547,
     title: "Whimsicott",
     type: ["planta", "hada"],
     description:
@@ -302,7 +302,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 6,
+    pokedexN: 6,
     title: "Charizard",
     type: ["fuego", "volador"],
     description:
@@ -320,7 +320,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 59,
+    pokedexN: 59,
     title: "Arcanine",
     type: ["fuego"],
     description:
@@ -338,7 +338,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 136,
+    pokedexN: 136,
     title: "Flareon",
     type: ["fuego"],
     description:
@@ -356,7 +356,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 229,
+    pokedexN: 229,
     title: "Houndoom",
     type: ["siniestro", "fuego"],
     description:
@@ -374,7 +374,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 250,
+    pokedexN: 250,
     title: "Ho-oh",
     type: ["fuego", "volador"],
     description:
@@ -392,7 +392,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 257,
+    pokedexN: 257,
     title: "Blaziken",
     type: ["fuego", "lucha"],
     description:
@@ -410,7 +410,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 392,
+    pokedexN: 392,
     title: "Infernape",
     type: ["fuego", "lucha"],
     description:
@@ -428,7 +428,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 609,
+    pokedexN: 609,
     title: "Chandelure",
     type: ["fantasma", "fuego"],
     description:
@@ -446,7 +446,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 663,
+    pokedexN: 663,
     title: "Talonflame",
     type: ["fuego", "volador"],
     description:
@@ -464,7 +464,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 146,
+    pokedexN: 146,
     title: "Moltres",
     type: ["fuego", "volador"],
     description:
@@ -482,7 +482,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 94,
+    pokedexN: 94,
     title: "Gengar",
     type: ["fantasma", "veneno"],
     description:
@@ -500,7 +500,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 442,
+    pokedexN: 442,
     title: "Spiritomb",
     type: ["fantasma", "siniestro"],
     description:
@@ -518,7 +518,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 681,
+    pokedexN: 681,
     title: "Aegislash",
     type: ["acero", "fantasma"],
     description:
@@ -536,7 +536,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 724,
+    pokedexN: 724,
     title: "Decidueye",
     type: ["planta", "fantasma"],
     description: "Descripción no disponible para este Pokémon",
@@ -553,7 +553,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 31,
+    pokedexN: 31,
     title: "Nidoqueen",
     type: ["veneno", "tierra"],
     description:
@@ -571,7 +571,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 34,
+    pokedexN: 34,
     title: "Nidoking",
     type: ["veneno", "tierra"],
     description:
@@ -589,7 +589,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 208,
+    pokedexN: 208,
     title: "Steelix",
     type: ["acero", "tierra"],
     description:
@@ -607,7 +607,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 260,
+    pokedexN: 260,
     title: "Swampert",
     type: ["agua", "tierra"],
     description:
@@ -625,7 +625,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 383,
+    pokedexN: 383,
     title: "Groudon",
     type: ["tierra"],
     description:
@@ -643,7 +643,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 445,
+    pokedexN: 445,
     title: "Garchomp",
     type: ["dragon", "tierra"],
     description:
@@ -661,7 +661,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 133,
+    pokedexN: 133,
     title: "Eevee",
     type: ["normal"],
     description:
@@ -679,7 +679,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 143,
+    pokedexN: 143,
     title: "Snorlax",
     type: ["normal"],
     description:
@@ -697,7 +697,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 398,
+    pokedexN: 398,
     title: "Staraptor",
     type: ["normal", "volador"],
     description:
@@ -715,7 +715,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 760,
+    pokedexN: 760,
     title: "Bewear",
     type: ["normal", "lucha"],
     description: "Descripción no disponible para este Pokémon",
@@ -732,7 +732,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 65,
+    pokedexN: 65,
     title: "Alakazam",
     type: ["psiquico"],
     description:
@@ -750,7 +750,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 306,
+    pokedexN: 306,
     title: "Aggron",
     type: ["acero", "roca"],
     description:
@@ -768,7 +768,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 395,
+    pokedexN: 395,
     title: "Empoleon",
     type: ["agua", "acero"],
     description:
@@ -786,7 +786,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 625,
+    pokedexN: 625,
     title: "Bisharp",
     type: ["siniestro", "acero"],
     description:
@@ -804,7 +804,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 150,
+    pokedexN: 150,
     title: "Mewtwo",
     type: ["psiquico"],
     description:
@@ -822,7 +822,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 197,
+    pokedexN: 197,
     title: "Umbreon",
     type: ["siniestro"],
     description:
@@ -840,7 +840,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 248,
+    pokedexN: 248,
     title: "Tyranitar",
     type: ["roca", "siniestro"],
     description:
@@ -858,7 +858,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 560,
+    pokedexN: 560,
     title: "Scrafty",
     type: ["siniestro", "lucha"],
     description:
@@ -876,7 +876,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 630,
+    pokedexN: 630,
     title: "Mandibuzz",
     type: ["siniestro", "volador"],
     description:
@@ -894,7 +894,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 658,
+    pokedexN: 658,
     title: "Greninja",
     type: ["agua", "siniestro"],
     description:
@@ -912,7 +912,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 338,
+    pokedexN: 338,
     title: "Solrock",
     type: ["roca", "psiquico"],
     description:
@@ -930,7 +930,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 25,
+    pokedexN: 25,
     title: "Pikachu",
     type: ["electrico"],
     description:
@@ -948,7 +948,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 135,
+    pokedexN: 135,
     title: "Jolteon",
     type: ["electrico"],
     description:
@@ -966,7 +966,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 311,
+    pokedexN: 311,
     title: "Plusle",
     type: ["electrico"],
     description:
@@ -984,7 +984,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 312,
+    pokedexN: 312,
     title: "Minun",
     type: ["electrico"],
     description:
@@ -1002,7 +1002,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 587,
+    pokedexN: 587,
     title: "Emolga",
     type: ["electrico", "volador"],
     description:
@@ -1020,7 +1020,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 807,
+    pokedexN: 807,
     title: "Zeraora",
     type: ["electrico"],
     description: "Descripción no disponible para este Pokémon",
@@ -1037,7 +1037,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 68,
+    pokedexN: 68,
     title: "Machamp",
     type: ["lucha"],
     description:
@@ -1055,7 +1055,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 448,
+    pokedexN: 448,
     title: "Lucario",
     type: ["lucha", "acero"],
     description:
@@ -1073,7 +1073,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 534,
+    pokedexN: 534,
     title: "Conkeldurr",
     type: ["lucha"],
     description:
@@ -1091,7 +1091,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 701,
+    pokedexN: 701,
     title: "Hawlucha",
     type: ["lucha", "volador"],
     description:
@@ -1109,7 +1109,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 18,
+    pokedexN: 18,
     title: "Pidgeot",
     type: ["normal", "volador"],
     description:
@@ -1127,7 +1127,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 130,
+    pokedexN: 130,
     title: "Gyarados",
     type: ["agua", "volador"],
     description:
@@ -1145,7 +1145,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 142,
+    pokedexN: 142,
     title: "Aerodactyl",
     type: ["roca", "volador"],
     description:
@@ -1163,7 +1163,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 337,
+    pokedexN: 337,
     title: "Lunatone",
     type: ["roca", "psiquico"],
     description:
@@ -1181,7 +1181,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 144,
+    pokedexN: 144,
     title: "Articuno",
     type: ["hielo", "volador"],
     description:
@@ -1199,7 +1199,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 145,
+    pokedexN: 145,
     title: "Zapdos",
     type: ["electrico", "volador"],
     description:
@@ -1217,7 +1217,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 3,
+    pokedexN: 3,
     title: "Venusaur",
     type: ["planta", "veneno"],
     description:
@@ -1235,7 +1235,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 152,
+    pokedexN: 152,
     title: "Chikorita",
     type: ["planta"],
     description:
@@ -1253,7 +1253,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 385,
+    pokedexN: 385,
     title: "Jirachi",
     type: ["acero", "psiquico"],
     description:
@@ -1271,7 +1271,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 475,
+    pokedexN: 475,
     title: "Gallade",
     type: ["psiquico", "lucha"],
     description:
@@ -1289,7 +1289,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 227,
+    pokedexN: 227,
     title: "Skarmory",
     type: ["acero", "volador"],
     description:
@@ -1307,7 +1307,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 151,
+    pokedexN: 151,
     title: "Mew",
     type: ["psiquico"],
     description:
@@ -1325,7 +1325,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 470,
+    pokedexN: 470,
     title: "Leafeon",
     type: ["planta"],
     description:
@@ -1343,7 +1343,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 497,
+    pokedexN: 497,
     title: "Serperior",
     type: ["planta"],
     description:
@@ -1361,7 +1361,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 586,
+    pokedexN: 586,
     title: "Sawsbuck",
     type: ["normal", "planta"],
     description:
@@ -1379,7 +1379,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 131,
+    pokedexN: 131,
     title: "Lapras",
     type: ["agua", "hielo"],
     description:
@@ -1397,7 +1397,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 238,
+    pokedexN: 238,
     title: "Smoochum",
     type: ["hielo", "psiquico"],
     description:
@@ -1415,7 +1415,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 471,
+    pokedexN: 471,
     title: "Glaceon",
     type: ["hielo"],
     description:
@@ -1433,7 +1433,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 73,
+    pokedexN: 73,
     title: "Tentacruel",
     type: ["agua", "veneno"],
     description:
@@ -1451,7 +1451,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 317,
+    pokedexN: 317,
     title: "Swalot",
     type: ["veneno"],
     description:
@@ -1469,7 +1469,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 185,
+    pokedexN: 185,
     title: "Sudowoodo",
     type: ["roca"],
     description:
@@ -1487,7 +1487,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 409,
+    pokedexN: 409,
     title: "Rampardos",
     type: ["roca"],
     description:
@@ -1505,7 +1505,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 558,
+    pokedexN: 558,
     title: "Crustle",
     type: ["bicho", "roca"],
     description:
@@ -1523,7 +1523,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 9,
+    pokedexN: 9,
     title: "Blastoise",
     type: ["agua"],
     description:
@@ -1541,7 +1541,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 121,
+    pokedexN: 121,
     title: "Starmie",
     type: ["agua", "psiquico"],
     description:
@@ -1559,7 +1559,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 134,
+    pokedexN: 134,
     title: "Vaporeon",
     type: ["agua"],
     description:
@@ -1577,7 +1577,7 @@ export const pokemonList = [
     },
   },
   {
-    id: 350,
+    pokedexN: 350,
     title: "Milotic",
     type: ["agua"],
     description:

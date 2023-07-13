@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { pokemonList } from "../../../productsMock"
 import { Box, Container, Typography } from "@mui/material"
 import { TypePokemon } from "../../common/TypePokemon/TypePokemon"
 import { ItemCount } from "../../common/Count/ItemCount"
@@ -8,6 +7,8 @@ import { CartContext } from "../../../context/CartContext"
 import { Loader } from "../../common/loader/Loader"
 import Swal from "sweetalert2"
 import { colorMap } from "../../../colorMap"
+import { dataBase } from "../../../firebaseConfig"
+import { collection, getDoc, doc } from "firebase/firestore"
 
 export const ProductDetail = () => {
   const [itemSelected, setItemSelect] = useState({})
@@ -18,16 +19,12 @@ export const ProductDetail = () => {
   const cantidad = getTotalByID(id)
 
   useEffect(() => {
-    let itemFind = pokemonList.find((item) => item.id === +id)
-
-    const getProduct = new Promise((res) => {
-      setTimeout(() => {
-        res(itemFind)
-      }, 500)
-    })
-
-    getProduct
-      .then((res) => setItemSelect(res))
+    const pokemonList = collection(dataBase, "pokemonList")
+    const refDoc = doc(pokemonList, id)
+    getDoc(refDoc)
+      .then((res) => {
+        setItemSelect({ ...res.data(), id: res.id })
+      })
       .catch((err) => console.log(err))
   }, [id])
 

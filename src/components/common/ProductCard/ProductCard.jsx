@@ -49,7 +49,7 @@ export const ProductCard = ({ item }) => {
       <Chip
         variant="outlined"
         color="default"
-        label={`N.°${item.id}`}
+        label={`N.°${item.pokedexN}`}
         sx={{ position: "absolute", margin: "2px", right: 0, top: "48%" }}
       ></Chip>
       <CardMedia

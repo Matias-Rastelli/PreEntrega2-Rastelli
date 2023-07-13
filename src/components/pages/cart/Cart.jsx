@@ -77,7 +77,10 @@ export const Cart = () => {
 
   return (
     <div>
-      <button onClick={limpiar}>ELIMINAR TODO</button>
+      <Button onClick={limpiar}>ELIMINAR TODO</Button>
+      <Link to="/checkout">
+        <Button>Finalizar compra</Button>
+      </Link>
       {cart.map((item) => {
         return (
           <div key={item.id}>

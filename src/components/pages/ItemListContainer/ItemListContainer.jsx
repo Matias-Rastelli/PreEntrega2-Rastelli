@@ -1,8 +1,15 @@
 import { useState } from "react"
-import { pokemonList } from "../../../productsMock"
 import { useEffect } from "react"
+import { ProductCard } from "../../common/ProductCard/ProductCard"
+import { useParams } from "react-router-dom"
+import { Loader } from "../../common/loader/Loader"
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown"
+import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp"
+import { dataBase } from "../../../firebaseConfig"
+import { collection, getDocs, query, where } from "firebase/firestore"
 import {
   Box,
+  Button,
   Checkbox,
   FormControl,
   InputLabel,
@@ -10,11 +17,6 @@ import {
   Select,
   TextField,
 } from "@mui/material"
-import { ProductCard } from "../../common/ProductCard/ProductCard"
-import { useParams } from "react-router-dom"
-import { Loader } from "../../common/loader/Loader"
-import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown"
-import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp"
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([])
@@ -33,34 +35,29 @@ export const ItemListContainer = () => {
   const { typeName } = useParams()
 
   useEffect(() => {
-    const pokemonFilter = pokemonList.filter((item) =>
-      item.type.some((item) => item === typeName)
-    )
+    const itemsCollection = collection(dataBase, "pokemonList")
+    let consulta
+
+    if (!typeName) {
+      consulta = itemsCollection
+    } else {
+      consulta = query(
+        itemsCollection,
+        where("type", "array-contains", typeName)
+      )
+    }
 
     const nameFiltered = (list) => {
       const newList = list.filter((item) =>
         item.title.toLowerCase().includes(filterByName)
       )
-      console.log(newList)
       return newList
     }
-
-    const getData = new Promise((res) => {
-      setTimeout(() => {
-        const list = typeName ? pokemonFilter : pokemonList
-        const filteredList = nameFiltered(list)
-        res(filteredList.length === 0 ? list : filteredList)
-      }, 500)
-    })
-
-    getData
-      .then((res) => setItems(sortItems(res)))
-      .catch((err) => console.log(err))
 
     const sortItems = (data) => {
       let sortedData = [...data]
       if (order === "id") {
-        sortedData.sort((a, b) => a.id - b.id)
+        sortedData.sort((a, b) => a.pokedexN - b.pokedexN)
       } else if (order === "name") {
         sortedData.sort((a, b) => a.title.localeCompare(b.title))
       } else if (order === "price") {
@@ -71,6 +68,20 @@ export const ItemListContainer = () => {
       }
       return sortedData
     }
+
+    getDocs(consulta)
+      .then((res) => {
+        const pokemonList = res.docs.map((item) => {
+          return {
+            ...item.data(),
+            id: item.id,
+          }
+        })
+        const filteredList = nameFiltered(pokemonList)
+        const finalList = filteredList.length === 0 ? pokemonList : filteredList
+        setItems(sortItems(finalList))
+      })
+      .catch((err) => console.log(err))
   }, [typeName, order, isAscending, filterByName])
 
   if (items.length === 0) {
@@ -113,10 +124,14 @@ export const ItemListContainer = () => {
           <TextField
             label="Buscar por nombre"
             variant="outlined"
+            value={filterByName}
             onChange={(event) => {
               setFilterByName(event.target.value.toLowerCase())
             }}
           />
+          <Button variant="outlined" onClick={() => setFilterByName("")}>
+            X
+          </Button>
         </Box>
       </FormControl>
       <Box
