@@ -1,14 +1,49 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { CartContext } from "../../../context/CartContext"
 import Swal from "sweetalert2"
-import { Box, Button, Chip, IconButton, Stack, Typography } from "@mui/material"
+import {
+  Box,
+  Button,
+  Chip,
+  IconButton,
+  Stack,
+  TextField,
+  Typography,
+} from "@mui/material"
 import { Link } from "react-router-dom"
 import DeleteIcon from "@mui/icons-material/Delete"
+import { cupones } from "../../../cupones"
 
 export const Cart = () => {
   const { cart, deleteAll, deleteItem, totalPrice } = useContext(CartContext)
+  const [descuento, setDescuento] = useState(0)
+  const [cupon, setCupon] = useState("")
 
   const total = totalPrice()
+
+  const aplicarCupon = () => {
+    const index = cupones.findIndex((cuponX) => cuponX.key == cupon)
+    index != -1 ? cuponValido() : cuponInvalido()
+    console.log("cupones", cupones)
+    console.log("cupon: ", cupon)
+    console.log("cuponaencontrado", index)
+
+    function cuponValido() {
+      setDescuento(total * cupones[index].value)
+    }
+
+    function cuponInvalido() {
+      setDescuento(0)
+    }
+  }
+
+  const colorCupon = () => {
+    if (cupon === "") {
+      return null
+    }
+    const color = descuento > 0 ? "lightgreen" : "red"
+    return color
+  }
 
   const deleteOne = (id) => {
     Swal.fire({
@@ -77,73 +112,129 @@ export const Cart = () => {
   }
 
   return (
-    <div>
-      <Button onClick={limpiar}>ELIMINAR TODO</Button>
-      <Link to="/checkout">
-        <Button>Finalizar compra</Button>
-      </Link>
-      {cart.map((item) => {
-        return (
-          <Box
-            key={item.id}
-            sx={{
-              height: "100px",
-              width: "60%",
-              boxShadow: "5px 5px 3px 0px rgba(0,0,0,0.75)",
-              margin: "5px 20px",
-              padding: "5px 10px",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              alignItems: "center",
-              border: "1px solid black",
-              backgroundColor: "#80808074",
-            }}
-          >
-            <Link to={`/itemDetail/${item.id}`}>
-              <Stack
-                direction="row"
-                alignItems="center"
-                spacing={3}
-                sx={{ width: "200px" }}
+    <Stack direction="row" alignItems="center" margin="25px 0px">
+      <Box
+        sx={{
+          width: "60%",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <Box>
+          {cart.map((item) => {
+            return (
+              <Box
+                key={item.id}
+                sx={{
+                  height: "100px",
+                  width: "90%",
+                  boxShadow: "5px 5px 3px 0px rgba(0,0,0,0.75)",
+                  margin: "5px 20px",
+                  padding: "5px 10px",
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  border: "1px solid black",
+                  backgroundColor: "#80808074",
+                }}
               >
-                <img
-                  src={item.img}
-                  alt=""
-                  style={{ height: "80px", width: "auto" }}
-                />
-                <Chip label={item.pokedexN}></Chip>
-                <Typography variant="h4">{item.title}</Typography>
-              </Stack>
-            </Link>
-            <Stack
-              direction="column"
-              alignItems="start"
-              spacing={0.5}
-              sx={{
-                width: "300px",
-              }}
-            >
-              <Typography variant="h6">Cantidad: {item.quantity}</Typography>
-              <Typography> Precio por unidad: ${item.price} </Typography>
-              <Typography>
-                {" "}
-                <b> Total: ${item.price * item.quantity}</b>{" "}
-              </Typography>
-            </Stack>
-            <IconButton
-              color="error"
-              aria-label="delete"
-              onClick={() => {
-                deleteOne(item.id)
-              }}
-            >
-              <DeleteIcon />
-            </IconButton>
-          </Box>
-        )
-      })}
-      <h1> {total} </h1>
-    </div>
+                <Link to={`/itemDetail/${item.id}`}>
+                  <Stack
+                    direction="row"
+                    alignItems="center"
+                    spacing={3}
+                    sx={{ width: "200px" }}
+                  >
+                    <img
+                      src={item.img}
+                      alt=""
+                      style={{ height: "80px", width: "auto" }}
+                    />
+                    <Chip label={item.pokedexN}></Chip>
+                    <Typography variant="h4">{item.title}</Typography>
+                  </Stack>
+                </Link>
+                <Stack
+                  direction="column"
+                  alignItems="start"
+                  spacing={0.5}
+                  sx={{
+                    width: "300px",
+                  }}
+                >
+                  <Typography variant="h6">
+                    Cantidad: {item.quantity}
+                  </Typography>
+                  <Typography> Precio por unidad: ${item.price} </Typography>
+                  <Typography>
+                    {" "}
+                    <b> Total: ${item.price * item.quantity}</b>{" "}
+                  </Typography>
+                </Stack>
+                <IconButton
+                  color="error"
+                  aria-label="delete"
+                  onClick={() => {
+                    deleteOne(item.id)
+                  }}
+                >
+                  <DeleteIcon />
+                </IconButton>
+              </Box>
+            )
+          })}
+        </Box>
+        <Box sx={{ alignSelf: "flex-end", margin: "10px 100px" }}>
+          <Button
+            onClick={limpiar}
+            variant="contained"
+            color="error"
+            sx={{ width: "180px" }}
+          >
+            ELIMINAR TODO
+          </Button>
+        </Box>
+      </Box>
+
+      <Stack
+        width="30%"
+        height="400px"
+        spacing={2}
+        justifyContent="space-around"
+        alignItems="center"
+        sx={{
+          backgroundColor: "#80808074",
+          padding: "25px",
+          border: "1px solid black",
+          boxShadow: "5px 5px 3px 0px rgba(0,0,0,0.75)",
+        }}
+      >
+        <Typography variant="h4">Resumen de compra</Typography>
+        <Typography variant="h6">Subtotal: ${total} </Typography>
+        <Typography variant="h6">Descuento: ${descuento} </Typography>
+        <Typography variant="h5">
+          <b> Total: ${total - descuento} </b>
+        </Typography>
+        <Link to="/checkout">
+          <Button variant="contained">Finalizar compra</Button>
+        </Link>
+        <TextField
+          id="outlined-controlled"
+          label="Cupón de descuento"
+          variant="filled"
+          value={cupon}
+          onChange={(event) => {
+            setCupon(event.target.value)
+          }}
+          sx={{
+            backgroundColor: colorCupon,
+          }}
+        />
+        <Button variant="contained" onClick={aplicarCupon}>
+          Aplicar cupón
+        </Button>
+      </Stack>
+    </Stack>
   )
 }
