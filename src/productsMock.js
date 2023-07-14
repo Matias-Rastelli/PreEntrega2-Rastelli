@@ -7,7 +7,7 @@ export const pokemonList = [
       "Butterfree tiene una habilidad especial para encontrar delicioso polen en las flores. Puede localizar, extraer y transportar polen de flores que estén floreciendo a 10 km de distancia de su nido.",
     price: 17000,
     stock: 14,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/012.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png",
     stats: {
       hp: 60,
       attack: 45,
@@ -25,7 +25,7 @@ export const pokemonList = [
       "Chansey pone a diario huevos con un valor nutritivo altísimo. Están tan ricos que hasta quien no tenga hambre se los comerá en un abrir y cerrar de ojos.",
     price: 20000,
     stock: 17,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/113.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/113.png",
     stats: {
       hp: 250,
       attack: 5,
@@ -43,7 +43,7 @@ export const pokemonList = [
       "Scizor tiene un cuerpo duro como el acero que no es fácil de alterar con ningún ataque común. Este Pokémon bate las alas para regular la temperatura corporal.",
     price: 22000,
     stock: 19,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/212.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/212.png",
     stats: {
       hp: 70,
       attack: 130,
@@ -61,7 +61,7 @@ export const pokemonList = [
       "Pone trampas con hilos electrificados. De este modo, electrocuta a sus enemigos y los inmoviliza por completo.",
     price: 21000,
     stock: 17,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/596.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/596.png",
     stats: {
       hp: 70,
       attack: 77,
@@ -79,7 +79,7 @@ export const pokemonList = [
       "Cuando combate, despide escamas ardientes de sus seis alas y genera un mar ígneo a su alrededor.",
     price: 24000,
     stock: 15,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/637.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/637.png",
     stats: {
       hp: 85,
       attack: 60,
@@ -96,7 +96,7 @@ export const pokemonList = [
     description: "Descripción no disponible para este Pokémon",
     price: 25000,
     stock: 13,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/794.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/794.png",
     stats: {
       hp: 107,
       attack: 139,
@@ -114,7 +114,7 @@ export const pokemonList = [
       "Dragonite es capaz de dar la vuelta al mundo en solo 16 horas. Es un Pokémon de buen corazón que guía hasta tierra a los barcos que se encuentran perdidos en plena tormenta y a punto de zozobrar.",
     price: 27000,
     stock: 16,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/149.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png",
     stats: {
       hp: 91,
       attack: 134,
@@ -132,7 +132,7 @@ export const pokemonList = [
       "Altaria baila y revolotea por el cielo entre ondeantes nubes que parecen de algodón. Al entonar melodías con su voz cristalina, este Pokémon deja a sus oyentes embobados y admirados.",
     price: 22000,
     stock: 5,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/334.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/334.png",
     stats: {
       hp: 75,
       attack: 70,
@@ -150,7 +150,7 @@ export const pokemonList = [
       "Latias es muy sensible a los sentimientos de la gente. Si detecta algún ápice de hostilidad, desplegará las plumas que tiene por todo el cuerpo y se pondrá a chillar para intimidar al enemigo.",
     price: 27000,
     stock: 1,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/380.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/380.png",
     stats: {
       hp: 80,
       attack: 80,
@@ -168,7 +168,7 @@ export const pokemonList = [
       "Latios tiene la habilidad de hacer que los demás vean algo que él ha visto o imaginado. Este Pokémon es muy inteligente. Es capaz de entender el lenguaje humano.",
     price: 27000,
     stock: 1,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/381.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/381.png",
     stats: {
       hp: 80,
       attack: 90,
@@ -186,7 +186,7 @@ export const pokemonList = [
       "En el mundo antiguo en el que habitaba no tenía rivales gracias a sus mandíbulas, con las que podría despedazar con facilidad gruesas placas de acero.",
     price: 23000,
     stock: 10,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/697.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/697.png",
     stats: {
       hp: 82,
       attack: 121,
@@ -203,7 +203,7 @@ export const pokemonList = [
     description: "Descripción no disponible para este Pokémon",
     price: 27000,
     stock: 17,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/887.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/887.png",
     stats: {
       hp: 88,
       attack: 120,
@@ -221,7 +221,7 @@ export const pokemonList = [
       "Clefable se mueve dando saltitos como si fuera haciendo uso de las alas. Estos pequeños brincos le permiten caminar por el agua. De todos es sabido que le encanta darse paseos por los lagos en tranquilas noches de luna llena.",
     price: 21000,
     stock: 12,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/036.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/036.png",
     stats: {
       hp: 95,
       attack: 70,
@@ -239,7 +239,7 @@ export const pokemonList = [
       "Gardevoir es capaz de leer el futuro. Si siente que su Entrenador está en peligro inminente, dicen que libera automáticamente toda su energía psicoquinética.",
     price: 23000,
     stock: 8,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/282.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/282.png",
     stats: {
       hp: 68,
       attack: 65,
@@ -256,7 +256,7 @@ export const pokemonList = [
     description: "Descripción no disponible para este Pokémon",
     price: 23000,
     stock: 14,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/730.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/730.png",
     stats: {
       hp: 80,
       attack: 74,
@@ -273,7 +273,7 @@ export const pokemonList = [
     description: "Descripción no disponible para este Pokémon",
     price: 21000,
     stock: 10,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/778.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/778.png",
     stats: {
       hp: 55,
       attack: 90,
@@ -291,7 +291,7 @@ export const pokemonList = [
       "Aparecen en medio de un torbellino y entran en las casas para descolocar los muebles o esparcir algodón por doquier.",
     price: 21000,
     stock: 17,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/547.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/547.png",
     stats: {
       hp: 60,
       attack: 67,
@@ -309,7 +309,7 @@ export const pokemonList = [
       "Charizard se dedica a volar por los cielos en busca de oponentes fuertes. Echa fuego por la boca y es capaz de derretir cualquier cosa. No obstante, si su rival es más débil que él, no usará este ataque.",
     price: 24000,
     stock: 18,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
     stats: {
       hp: 78,
       attack: 84,
@@ -327,7 +327,7 @@ export const pokemonList = [
       "Arcanine es conocido por lo veloz que es. Dicen que es capaz de correr 10 000 km en 24 horas. El fuego que arde con vigor en el interior de este Pokémon constituye su fuente de energía.",
     price: 24000,
     stock: 7,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/059.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png",
     stats: {
       hp: 90,
       attack: 110,
@@ -345,7 +345,7 @@ export const pokemonList = [
       "La suavidad del pelaje de Flareon tiene una función clara: libera calor para que el Pokémon no se asfixie. La temperatura corporal de este Pokémon puede alcanzar los 900 °C.",
     price: 23000,
     stock: 9,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/136.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png",
     stats: {
       hp: 65,
       attack: 130,
@@ -363,7 +363,7 @@ export const pokemonList = [
       "En la manada de Houndoom, el que tiene los cuernos más arqueados hacia atrás tiene un mayor papel de liderazgo. Estos Pokémon suelen elegir al jefe en duelo.",
     price: 22000,
     stock: 13,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/229.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/229.png",
     stats: {
       hp: 75,
       attack: 90,
@@ -381,7 +381,7 @@ export const pokemonList = [
       "El plumaje de Ho-Oh contiene siete colores que pueden apreciarse según el ángulo desde el que les dé la luz. Dicen que sus plumas dan felicidad a quienes las llevan y, también, que este Pokémon vive a los pies del arco iris.",
     price: 30000,
     stock: 1,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/250.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/250.png",
     stats: {
       hp: 106,
       attack: 130,
@@ -399,7 +399,7 @@ export const pokemonList = [
       "En combate, Blaziken expulsa vivas llamas por las muñecas y ataca al enemigo con fiereza. Cuanto más fuerte sea el enemigo, más intensas serán las llamas.",
     price: 23000,
     stock: 13,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/257.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/257.png",
     stats: {
       hp: 80,
       attack: 120,
@@ -417,7 +417,7 @@ export const pokemonList = [
       "Su corona de fuego demuestra su naturaleza ígnea. Nadie le gana en velocidad.",
     price: 24000,
     stock: 14,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/392.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/392.png",
     stats: {
       hp: 76,
       attack: 104,
@@ -435,7 +435,7 @@ export const pokemonList = [
       "Sus llamas absorben el alma del enemigo y la abrasan, dejando solo su cuerpo inerte.",
     price: 23000,
     stock: 12,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/609.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/609.png",
     stats: {
       hp: 60,
       attack: 55,
@@ -453,7 +453,7 @@ export const pokemonList = [
       "Si se exalta durante un combate reñido, arroja chispas y ascuas de los intersticios entre su plumaje mientras vuela.",
     price: 22000,
     stock: 15,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/663.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/663.png",
     stats: {
       hp: 78,
       attack: 81,
@@ -471,7 +471,7 @@ export const pokemonList = [
       "Moltres es un Pokémon pájaro legendario que tiene la habilidad de controlar el fuego. Dicen que, si resulta herido, se sumerge en el líquido magma de un volcán para arder y curarse.",
     price: 26000,
     stock: 1,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/146.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/146.png",
     stats: {
       hp: 90,
       attack: 100,
@@ -489,7 +489,7 @@ export const pokemonList = [
       "Si alguien ve que su sombra le adelanta de repente en una noche oscura, es muy probable que lo que esté viendo no sea su sombra, sino a un Gengar haciéndose pasar por la misma.",
     price: 22000,
     stock: 11,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/094.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png",
     stats: {
       hp: 60,
       attack: 65,
@@ -507,7 +507,7 @@ export const pokemonList = [
       "Se formó a partir de 108 espíritus. Está unido a la fisura de una piedra angular mística.",
     price: 21000,
     stock: 12,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/442.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/442.png",
     stats: {
       hp: 50,
       attack: 92,
@@ -525,7 +525,7 @@ export const pokemonList = [
       "Han permanecido junto a estirpes de reyes durante generaciones. Mediante su poder espectral pueden controlar a humanos y a Pokémon.",
     price: 22000,
     stock: 9,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/681.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/681.png",
     stats: {
       hp: 60,
       attack: 50,
@@ -542,7 +542,7 @@ export const pokemonList = [
     description: "Descripción no disponible para este Pokémon",
     price: 23000,
     stock: 17,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/724.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/724.png",
     stats: {
       hp: 78,
       attack: 107,
@@ -560,7 +560,7 @@ export const pokemonList = [
       "Nidoqueen tiene el cuerpo totalmente recubierto de escamas durísimas. Suele lanzar por los aires a sus rivales de los violentos golpes que les propina. Cuando se trata de defender a sus crías, alcanza su nivel máximo de fuerza.",
     price: 22000,
     stock: 6,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/031.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/031.png",
     stats: {
       hp: 90,
       attack: 92,
@@ -578,7 +578,7 @@ export const pokemonList = [
       "La gruesa cola de Nidoking encierra una fuerza realmente destructora. Con una vez que la agite, es capaz de tumbar una torre metálica de transmisión. Una vez que este Pokémon se desboca, no hay quien lo pare.",
     price: 22000,
     stock: 18,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/034.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/034.png",
     stats: {
       hp: 81,
       attack: 102,
@@ -596,7 +596,7 @@ export const pokemonList = [
       "Steelix vive a mayor profundidad aún que Onix. Se le conoce por su tendencia a excavar hacia el interior del planeta. Hay datos que muestran que este Pokémon ha llegado a alcanzar 1 km de profundidad.",
     price: 22000,
     stock: 8,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/208.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/208.png",
     stats: {
       hp: 75,
       attack: 85,
@@ -614,7 +614,7 @@ export const pokemonList = [
       "Swampert es muy fuerte. Puede arrastrar una roca que pese más de una tonelada sin ningún problema. Este Pokémon tiene el sentido de la vista muy desarrollado. Es capaz de ver hasta en aguas cenagosas.",
     price: 24000,
     stock: 9,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/260.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/260.png",
     stats: {
       hp: 100,
       attack: 110,
@@ -632,7 +632,7 @@ export const pokemonList = [
       "A Groudon siempre se le ha descrito como el Pokémon que expandió los continentes. Varias leyendas cuentan que libró combates contra Kyogre en repetidas ocasiones para tener el control de la energía de la naturaleza.",
     price: 30000,
     stock: 1,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/383.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/383.png",
     stats: {
       hp: 100,
       attack: 150,
@@ -650,7 +650,7 @@ export const pokemonList = [
       "Cuando despliega su cuerpo y sus alas, parece un avión a reacción. Vuela a velocidad sónica.",
     price: 27000,
     stock: 13,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/445.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/445.png",
     stats: {
       hp: 108,
       attack: 130,
@@ -668,7 +668,7 @@ export const pokemonList = [
       "La configuración genética de Eevee le permite mutar y adaptarse enseguida a cualquier medio en el que viva. La evolución de este Pokémon suele ser posible gracias a las radiaciones emitidas por varias piedras.",
     price: 14000,
     stock: 7,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
     stats: {
       hp: 55,
       attack: 55,
@@ -686,7 +686,7 @@ export const pokemonList = [
       "Un día cualquiera en la vida de Snorlax consiste en comer y dormir. Es un Pokémon tan dócil que es fácil ver niños usando la gran panza que tiene como lugar de juegos.",
     price: 24000,
     stock: 6,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/143.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png",
     stats: {
       hp: 160,
       attack: 110,
@@ -704,7 +704,7 @@ export const pokemonList = [
       "Sus alas y sus patas son muy fuertes. Puede llevarse volando Pokémon pequeños.",
     price: 21000,
     stock: 15,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/398.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/398.png",
     stats: {
       hp: 85,
       attack: 120,
@@ -721,7 +721,7 @@ export const pokemonList = [
     description: "Descripción no disponible para este Pokémon",
     price: 22000,
     stock: 18,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/760.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/760.png",
     stats: {
       hp: 120,
       attack: 125,
@@ -739,7 +739,7 @@ export const pokemonList = [
       "El cerebro de Alakazam nunca deja de crecer y por eso al cuello le cuesta sostener el peso de la cabeza. Este Pokémon usa sus poderes psicoquinéticos para mantener en alto la cabeza.",
     price: 22000,
     stock: 16,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/065.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/065.png",
     stats: {
       hp: 55,
       attack: 50,
@@ -757,7 +757,7 @@ export const pokemonList = [
       "Aggron marca una montaña entera como su territorio y acaba con todo lo que pueda ponerlo en peligro. Este Pokémon está continuamente patrullando la zona en defensa de su terreno.",
     price: 23000,
     stock: 7,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/306.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/306.png",
     stats: {
       hp: 70,
       attack: 110,
@@ -775,7 +775,7 @@ export const pokemonList = [
       "Nada tan rápido como un fueraborda. Con los afilados bordes de sus alas puede cortar el hielo.",
     price: 23000,
     stock: 9,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/395.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/395.png",
     stats: {
       hp: 84,
       attack: 86,
@@ -793,7 +793,7 @@ export const pokemonList = [
       "Un Pokémon temible que remata a su presa una vez que su séquito de Pawniard la ha debilitado e inmovilizado.",
     price: 22000,
     stock: 17,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/625.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/625.png",
     stats: {
       hp: 65,
       attack: 125,
@@ -811,7 +811,7 @@ export const pokemonList = [
       "Mewtwo fue creado por manipulación genética. Pero, a pesar de que el hombre creó su cuerpo, dotar a Mewtwo de un corazón compasivo quedó en el olvido.",
     price: 30000,
     stock: 1,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
     stats: {
       hp: 106,
       attack: 110,
@@ -829,7 +829,7 @@ export const pokemonList = [
       "Umbreon evolucionó tras haber estado expuesto a ondas lunares. Suele esconderse en la oscuridad en silencio y esperar a que su presa se mueva. Cuando se lanza al ataque, le brillan los anillos del cuerpo.",
     price: 23000,
     stock: 15,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/197.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/197.png",
     stats: {
       hp: 95,
       attack: 65,
@@ -847,7 +847,7 @@ export const pokemonList = [
       "Tyranitar tiene una fuerza imponente; es capaz de echar abajo una montaña para hacer su nido. Este Pokémon suele merodear por las zonas de montaña en busca de nuevos rivales contra los que luchar.",
     price: 27000,
     stock: 12,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/248.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/248.png",
     stats: {
       hp: 100,
       attack: 134,
@@ -865,7 +865,7 @@ export const pokemonList = [
       "Se protege de los ataques con la muda de su piel mientras reparte patadas. Cuanto mayor es su cresta, más se le respeta.",
     price: 21000,
     stock: 10,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/560.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/560.png",
     stats: {
       hp: 65,
       attack: 90,
@@ -883,7 +883,7 @@ export const pokemonList = [
       "Vuela en círculos. Cuando avista una presa, la ataca y la transporta a su nido con suma facilidad.",
     price: 22000,
     stock: 6,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/630.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/630.png",
     stats: {
       hp: 110,
       attack: 65,
@@ -901,7 +901,7 @@ export const pokemonList = [
       "Comprime el agua y crea estrellas ninja con las que ataca al enemigo. Cuando las hace girar a gran velocidad cortan en dos hasta el metal.",
     price: 23000,
     stock: 10,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/658.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/658.png",
     stats: {
       hp: 72,
       attack: 95,
@@ -919,7 +919,7 @@ export const pokemonList = [
       "Solrock pertenece a una nueva especie de Pokémon a la que se le atribuye una procedencia extraterrestre. Este Pokémon permanece flotando en el aire y se mueve muy despacio. Al luchar, desprende una luz viva e intensa.",
     price: 20000,
     stock: 17,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/338.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/338.png",
     stats: {
       hp: 90,
       attack: 95,
@@ -937,7 +937,7 @@ export const pokemonList = [
       "Cada vez que un Pikachu se encuentra con algo nuevo, le lanza una descarga eléctrica. Cuando se ve alguna baya chamuscada, es muy probable que sea obra de un Pikachu, ya que a veces no controlan la intensidad de la descarga.",
     price: 14000,
     stock: 8,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
     stats: {
       hp: 35,
       attack: 55,
@@ -955,7 +955,7 @@ export const pokemonList = [
       "Las células de Jolteon generan un nivel bajo de electricidad, cuya intensidad aumenta con la electricidad estática que acumula en un pelaje formado por agujas cargadas de electricidad. Esta característica le permite lanzar rayos.",
     price: 23000,
     stock: 19,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/135.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png",
     stats: {
       hp: 65,
       attack: 65,
@@ -973,7 +973,7 @@ export const pokemonList = [
       "Plusle siempre anima a sus compañeros. Cuando algún miembro de su grupo hace un gran esfuerzo en combate, causa un cortocircuito en su interior para mostrar con el chisporroteo su alegría.",
     price: 18000,
     stock: 7,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/311.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/311.png",
     stats: {
       hp: 60,
       attack: 50,
@@ -991,7 +991,7 @@ export const pokemonList = [
       "Minun se preocupa más por alentar a sus compañeros de equipo que por su propia seguridad. Para animar a los miembros de su grupo, crea un cortocircuito en su interior y libera un chisporroteo espectacular.",
     price: 18000,
     stock: 8,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/312.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/312.png",
     stats: {
       hp: 60,
       attack: 40,
@@ -1009,7 +1009,7 @@ export const pokemonList = [
       "Vive en la copa de los árboles. Produce descargas mientras vuela con el interior de la membrana que hace de capa.",
     price: 19000,
     stock: 5,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/587.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/587.png",
     stats: {
       hp: 55,
       attack: 75,
@@ -1026,7 +1026,7 @@ export const pokemonList = [
     description: "Descripción no disponible para este Pokémon",
     price: 27000,
     stock: 0,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/807.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/807.png",
     stats: {
       hp: 88,
       attack: 112,
@@ -1044,7 +1044,7 @@ export const pokemonList = [
       "Machamp es tan fuerte que puede derribar lo que quiera. Sin embargo, cuando tiene que realizar una tarea que requiere delicadeza y destreza, se le enredan los brazos. Este Pokémon pasa a la acción sin pensar.",
     price: 22000,
     stock: 6,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/068.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/068.png",
     stats: {
       hp: 90,
       attack: 130,
@@ -1062,7 +1062,7 @@ export const pokemonList = [
       "Puede leer los pensamientos y movimientos de su adversario a través de su aura.",
     price: 23000,
     stock: 8,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/448.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/448.png",
     stats: {
       hp: 70,
       attack: 110,
@@ -1080,7 +1080,7 @@ export const pokemonList = [
       "Se cree que Conkeldurr enseñó a los humanos la técnica para elaborar cemento hace más de 2000 años.",
     price: 22000,
     stock: 15,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/534.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/534.png",
     stats: {
       hp: 105,
       attack: 140,
@@ -1098,7 +1098,7 @@ export const pokemonList = [
       "A pesar de ser un Pokémon de pequeña estatura, su pericia en el combate le permite plantar cara a Pokémon como Machamp o Hariyama.",
     price: 22000,
     stock: 18,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/701.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/701.png",
     stats: {
       hp: 78,
       attack: 92,
@@ -1116,7 +1116,7 @@ export const pokemonList = [
       "El plumaje de este Pokémon es bonito e hipnótico. Muchos Entrenadores se quedan embobados ante la belleza impactante de las plumas que tiene en la cabeza; lo que les lleva a elegir a Pidgeot como su Pokémon.",
     price: 21000,
     stock: 12,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/018.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png",
     stats: {
       hp: 83,
       attack: 80,
@@ -1134,7 +1134,7 @@ export const pokemonList = [
       "Cuando Magikarp evoluciona y se convierte en Gyarados, sufre un cambio estructural en las células del cerebro. Dicen que esa transformación es la causa de la naturaleza violenta y salvaje de este Pokémon.",
     price: 24000,
     stock: 7,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/130.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/130.png",
     stats: {
       hp: 95,
       attack: 125,
@@ -1152,7 +1152,7 @@ export const pokemonList = [
       "Los orígenes de Aerodactyl datan de la era de los dinosaurios. Se regeneró a partir de material genético contenido en ámbar. Se supone que fue el amo de los cielos en épocas pasadas.",
     price: 23000,
     stock: 7,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/142.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/142.png",
     stats: {
       hp: 80,
       attack: 105,
@@ -1170,7 +1170,7 @@ export const pokemonList = [
       "Lunatone fue descubierto en el lugar de impacto de un meteorito. Por eso, hay quien especula con la idea de que procede del espacio. Con todo, hasta el día de hoy nadie ha podido probar esta teoría.",
     price: 20000,
     stock: 10,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/337.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/337.png",
     stats: {
       hp: 90,
       attack: 55,
@@ -1188,7 +1188,7 @@ export const pokemonList = [
       "Articuno es un Pokémon pájaro legendario que puede controlar el hielo. El batir de sus alas congela el aire. Dicen que consigue hacer que nieve cuando vuela.",
     price: 26000,
     stock: 1,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/144.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/144.png",
     stats: {
       hp: 90,
       attack: 85,
@@ -1206,7 +1206,7 @@ export const pokemonList = [
       "Zapdos es un Pokémon pájaro legendario que tiene la habilidad de controlar la electricidad. Suele vivir en nubarrones. Este Pokémon gana mucha fuerza si le alcanzan los rayos.",
     price: 26000,
     stock: 1,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/145.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/145.png",
     stats: {
       hp: 90,
       attack: 90,
@@ -1224,7 +1224,7 @@ export const pokemonList = [
       "Venusaur tiene una flor enorme en el lomo que, según parece, adquiere unos colores muy vivos si está bien nutrido y le da mucho el sol. El aroma delicado de la flor tiene un efecto relajante en el ánimo de las personas.",
     price: 23000,
     stock: 14,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
     stats: {
       hp: 80,
       attack: 82,
@@ -1242,7 +1242,7 @@ export const pokemonList = [
       "Al luchar, Chikorita agita la hoja que tiene para mantener a raya al rival. Pero, al mismo tiempo, libera una suave fragancia que apacigua el encuentro y crea un ambiente agradable y de amistad.",
     price: 14000,
     stock: 10,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/152.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png",
     stats: {
       hp: 45,
       attack: 49,
@@ -1260,7 +1260,7 @@ export const pokemonList = [
       "Cuenta la leyenda que Jirachi hará realidad cualquier deseo que se le escriba en las notas que lleva en la cabeza cuando las lea tras salir de su letargo. Si este Pokémon siente peligro, luchará sin haber llegado a despertarse.",
     price: 27000,
     stock: 1,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/385.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/385.png",
     stats: {
       hp: 100,
       attack: 100,
@@ -1278,7 +1278,7 @@ export const pokemonList = [
       "Puede presentir los movimientos de sus rivales y por eso ataca siempre antes que ellos.",
     price: 23000,
     stock: 18,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/475.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/475.png",
     stats: {
       hp: 68,
       attack: 125,
@@ -1296,7 +1296,7 @@ export const pokemonList = [
       "Skarmory está totalmente encerrado en el interior de una fuerte coraza protectora. En vuelo, puede llegar a alcanzar los 300 km/h y usa las afiladas alas que tiene para azotar al rival.",
     price: 20000,
     stock: 19,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/227.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/227.png",
     stats: {
       hp: 65,
       attack: 80,
@@ -1314,7 +1314,7 @@ export const pokemonList = [
       "Dicen que Mew posee el mapa genético de todos los Pokémon. Puede hacerse invisible cuando quiere, así que pasa desapercibido cada vez que se le acerca alguien.",
     price: 27000,
     stock: 1,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
     stats: {
       hp: 100,
       attack: 100,
@@ -1332,7 +1332,7 @@ export const pokemonList = [
       "En días soleados duerme y hace la fotosíntesis, emitiendo aire puro a su alrededor.",
     price: 23000,
     stock: 15,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/470.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/470.png",
     stats: {
       hp: 65,
       attack: 110,
@@ -1350,7 +1350,7 @@ export const pokemonList = [
       "Tan solo muestra su verdadero poder a quienes no se amedrentan ante su noble pero inquisitoria mirada.",
     price: 23000,
     stock: 11,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/497.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/497.png",
     stats: {
       hp: 75,
       attack: 75,
@@ -1368,7 +1368,7 @@ export const pokemonList = [
       "Cambia de morada dependiendo de las estaciones. Observando sus cuernos, la gente sabe cuándo estas van a cambiar.",
     price: 21000,
     stock: 14,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/586.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/586.png",
     stats: {
       hp: 80,
       attack: 100,
@@ -1386,7 +1386,7 @@ export const pokemonList = [
       "Por culpa de la gente, Lapras está casi en extinción. Dicen que, al anochecer, se pone a cantar quejicoso mientras busca a los miembros de su especie que puedan quedar.",
     price: 24000,
     stock: 16,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/131.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/131.png",
     stats: {
       hp: 130,
       attack: 85,
@@ -1404,7 +1404,7 @@ export const pokemonList = [
       "Smoochum va corriendo por todos lados, pero se cae también con frecuencia. Y, en cuanto tiene ocasión, se mira en algún sitio para ver si se ha manchado la cara.",
     price: 13000,
     stock: 9,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/238.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/238.png",
     stats: {
       hp: 45,
       attack: 30,
@@ -1422,7 +1422,7 @@ export const pokemonList = [
       "Controla su temperatura corporal para congelar el ambiente y causar ráfagas de nieve en polvo.",
     price: 23000,
     stock: 18,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/471.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/471.png",
     stats: {
       hp: 65,
       attack: 60,
@@ -1440,7 +1440,7 @@ export const pokemonList = [
       "Tentacruel tiene unas enormes esferas rojas en la cabeza, que brillan antes de lanzar una descarga ultrasónica a lo que le rodea. Este estallido crea unas olas tremendas a su alrededor.",
     price: 23000,
     stock: 16,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/073.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/073.png",
     stats: {
       hp: 80,
       attack: 70,
@@ -1458,7 +1458,7 @@ export const pokemonList = [
       "Cuando Swalot detecta una presa, echa por los poros, y a borbotones, un fluido tóxico espantoso con el que rocía a su víctima. Una vez que la debilita, se la traga entera gracias a la gigantesca boca que tiene.",
     price: 21000,
     stock: 18,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/317.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/317.png",
     stats: {
       hp: 100,
       attack: 73,
@@ -1476,7 +1476,7 @@ export const pokemonList = [
       "Sudowoodo se camufla adoptando la imagen de un árbol para que no le ataque ningún enemigo. El problema viene en invierno, ya que las extremidades superiores tienen color verde y es fácil identificarle.",
     price: 18000,
     stock: 12,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/185.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/185.png",
     stats: {
       hp: 70,
       attack: 100,
@@ -1494,7 +1494,7 @@ export const pokemonList = [
       "Tiene sesos pequeños porque su duro cráneo, que soporta cualquier golpe, les impide desarrollarse.",
     price: 22000,
     stock: 5,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/409.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/409.png",
     stats: {
       hp: 97,
       attack: 165,
@@ -1512,7 +1512,7 @@ export const pokemonList = [
       "Su inmensa capacidad motriz le permite desplazarse cargando a sus espaldas rocas enormes durante días.",
     price: 21000,
     stock: 16,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/558.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/558.png",
     stats: {
       hp: 70,
       attack: 105,
@@ -1530,7 +1530,7 @@ export const pokemonList = [
       "Blastoise lanza chorros de agua con gran precisión por los tubos que le salen del caparazón que tiene en la espalda. Puede disparar chorros de agua con tanta puntería que no fallaría al tirar contra una lata pequeña a 50 m.",
     price: 23000,
     stock: 16,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
     stats: {
       hp: 79,
       attack: 83,
@@ -1548,7 +1548,7 @@ export const pokemonList = [
       "La parte central de Starmie, el núcleo brillante, resplandece con siete colores distintos. Debido a su naturaleza luminosa, a este Pokémon se le ha dado el apelativo de la Gema del Mar.",
     price: 23000,
     stock: 15,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/121.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/121.png",
     stats: {
       hp: 60,
       attack: 75,
@@ -1566,7 +1566,7 @@ export const pokemonList = [
       "Vaporeon sufrió una mutación repentina y desarrolló aletas y branquias que le permiten vivir bajo el agua. Asimismo, este Pokémon tiene la habilidad de controlar las aguas.",
     price: 23000,
     stock: 12,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/134.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png",
     stats: {
       hp: 130,
       attack: 65,
@@ -1584,7 +1584,7 @@ export const pokemonList = [
       "De Milotic se dice que es el Pokémon más bello. Tiene la capacidad de calmar sentimientos tales como el miedo y la hostilidad, y apaciguar las relaciones de áspera enemistad.",
     price: 24000,
     stock: 12,
-    img: "https:/assets.pokemon.com/assets/cms2/img/pokedex/full/350.png",
+    img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/350.png",
     stats: {
       hp: 95,
       attack: 60,
