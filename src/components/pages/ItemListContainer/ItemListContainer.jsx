@@ -11,13 +11,9 @@ import { collection, getDocs, query, where } from "firebase/firestore"
 import {
   Box,
   Checkbox,
-  Divider,
   FormControl,
   IconButton,
-  InputAdornment,
-  InputLabel,
   MenuItem,
-  Select,
   TextField,
 } from "@mui/material"
 

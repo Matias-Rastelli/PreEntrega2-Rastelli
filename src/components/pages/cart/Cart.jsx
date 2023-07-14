@@ -1,8 +1,9 @@
 import { useContext } from "react"
 import { CartContext } from "../../../context/CartContext"
 import Swal from "sweetalert2"
-import { Box, Button, Typography } from "@mui/material"
+import { Box, Button, Chip, IconButton, Stack, Typography } from "@mui/material"
 import { Link } from "react-router-dom"
+import DeleteIcon from "@mui/icons-material/Delete"
 
 export const Cart = () => {
   const { cart, deleteAll, deleteItem, totalPrice } = useContext(CartContext)
@@ -83,18 +84,63 @@ export const Cart = () => {
       </Link>
       {cart.map((item) => {
         return (
-          <div key={item.id}>
-            <h2>{item.title}</h2>
-            <h3> {item.quantity} </h3>
-            <img src={item.img} alt="" />
-            <button
+          <Box
+            key={item.id}
+            sx={{
+              height: "100px",
+              width: "60%",
+              boxShadow: "5px 5px 3px 0px rgba(0,0,0,0.75)",
+              margin: "5px 20px",
+              padding: "5px 10px",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              border: "1px solid black",
+              backgroundColor: "#80808074",
+            }}
+          >
+            <Link to={`/itemDetail/${item.id}`}>
+              <Stack
+                direction="row"
+                alignItems="center"
+                spacing={3}
+                sx={{ width: "200px" }}
+              >
+                <img
+                  src={item.img}
+                  alt=""
+                  style={{ height: "80px", width: "auto" }}
+                />
+                <Chip label={item.pokedexN}></Chip>
+                <Typography variant="h4">{item.title}</Typography>
+              </Stack>
+            </Link>
+            <Stack
+              direction="column"
+              alignItems="start"
+              spacing={0.5}
+              sx={{
+                width: "300px",
+              }}
+            >
+              <Typography variant="h6">Cantidad: {item.quantity}</Typography>
+              <Typography> Precio por unidad: ${item.price} </Typography>
+              <Typography>
+                {" "}
+                <b> Total: ${item.price * item.quantity}</b>{" "}
+              </Typography>
+            </Stack>
+            <IconButton
+              color="error"
+              aria-label="delete"
               onClick={() => {
                 deleteOne(item.id)
               }}
             >
-              ELIMINAR
-            </button>
-          </div>
+              <DeleteIcon />
+            </IconButton>
+          </Box>
         )
       })}
       <h1> {total} </h1>
