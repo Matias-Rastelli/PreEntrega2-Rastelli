@@ -1,6 +1,6 @@
 import { ButtonGroup, Button, Box, Typography, Stack } from "@mui/material"
 import { CartWidget } from "../../common/cartWidget/CartWidget"
-import { Link, Outlet } from "react-router-dom"
+import { Link } from "react-router-dom"
 import "./Navbar.css"
 
 export const NavBar = () => {
@@ -115,7 +115,6 @@ export const NavBar = () => {
         </Stack>
         <CartWidget />
       </Box>
-      <Outlet />
     </>
   )
 }

@@ -1,0 +1,9 @@
+footer img {
+  width: 30px;
+  height: auto;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+  filter: invert(20%);
+}

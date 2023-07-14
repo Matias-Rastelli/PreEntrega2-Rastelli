@@ -1,14 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { NavBar } from "./components/layout/NavBar/NavBar"
 import { menuRoutes } from "./routes/routes"
 import CartContextProvider from "./context/CartContext"
+import { Main } from "./components/layout/Main/Main"
 
 function App() {
   return (
     <BrowserRouter>
       <CartContextProvider>
         <Routes>
-          <Route element={<NavBar />}>
+          <Route element={<Main />}>
             {menuRoutes.map(({ id, path, Element }) => (
               <Route key={id} path={path} element={<Element />} />
             ))}
