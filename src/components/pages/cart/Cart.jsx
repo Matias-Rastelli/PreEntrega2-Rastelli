@@ -24,9 +24,6 @@ export const Cart = () => {
   const aplicarCupon = () => {
     const index = cupones.findIndex((cuponX) => cuponX.key == cupon)
     index != -1 ? cuponValido() : cuponInvalido()
-    console.log("cupones", cupones)
-    console.log("cupon: ", cupon)
-    console.log("cuponaencontrado", index)
 
     function cuponValido() {
       setDescuento(total * cupones[index].value)
@@ -212,28 +209,36 @@ export const Cart = () => {
       >
         <Typography variant="h4">Resumen de compra</Typography>
         <Typography variant="h6">Subtotal: ${total} </Typography>
-        <Typography variant="h6">Descuento: ${descuento} </Typography>
+        <Typography variant="h6">
+          {descuento > 0
+            ? `Descuento  "${cupon}": $${descuento}`
+            : "Sin descuento"}
+        </Typography>
         <Typography variant="h5">
           <b> Total: ${total - descuento} </b>
         </Typography>
         <Link to="/checkout">
-          <Button variant="contained">Finalizar compra</Button>
+          <Button variant="contained" size="large">
+            Finalizar compra
+          </Button>
         </Link>
-        <TextField
-          id="outlined-controlled"
-          label="Cupón de descuento"
-          variant="filled"
-          value={cupon}
-          onChange={(event) => {
-            setCupon(event.target.value)
-          }}
-          sx={{
-            backgroundColor: colorCupon,
-          }}
-        />
-        <Button variant="contained" onClick={aplicarCupon}>
-          Aplicar cupón
-        </Button>
+        <Stack direction="row">
+          <TextField
+            size="small"
+            id="outlined-controlled"
+            label="Cupón de descuento"
+            variant="filled"
+            onBlur={(event) => {
+              setCupon(event.target.value)
+            }}
+            sx={{
+              backgroundColor: colorCupon,
+            }}
+          />
+          <Button size="small" variant="contained" onClick={aplicarCupon}>
+            Aplicar cupón
+          </Button>
+        </Stack>
       </Stack>
     </Stack>
   )

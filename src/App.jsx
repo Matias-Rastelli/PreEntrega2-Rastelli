@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { menuRoutes } from "./routes/routes"
 import CartContextProvider from "./context/CartContext"
 import { Main } from "./components/layout/Main/Main"
+import { NotFound } from "./components/pages/notFound/NotFound"
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
             ))}
           </Route>
 
-          <Route path="*" element={<h1>404 not found</h1>} />
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </CartContextProvider>
     </BrowserRouter>
