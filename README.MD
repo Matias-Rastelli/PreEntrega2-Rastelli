@@ -30,17 +30,14 @@ Para iniciar la app
 
 Para correr este proyeto vas a necesitar agregar las siguientes variables de entorno, creando el archivo .env en la raiz de la app.
 
+```bash
 VITE_APIKEY=AIzaSyA-y4I3EkoC-oNzLR0s3QcgFyW4SqmxPUE
-
 VITE_AUTHDOMAIN=poketienda-a1234.firebaseapp.com
-
 VITE_PROJECTID=poketienda-a1234
-
 VITE_STORAGEBUCKET=poketienda-a1234.appspot.com
-
 VITE_MESSAGINGSENDERID=142779694303
-
 VITE_APPID=1:142779694303:web:ac46097aee196fd57a3d6a
+```
 
 ## Lessons Learned
 
