@@ -2,6 +2,9 @@
 
 Tienda de pokemons, realizada con ReactJS, para el proyecto final del curso de ReactJS de Coderhouse.
 
+cupones de descuento para el carrito de compras:
+cupon10 - cupon20 - cupon50 - cupon100
+
 Actualmente en:
 
 https://poke-tienda-rastelli.vercel.app/
